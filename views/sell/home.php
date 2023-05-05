@@ -83,7 +83,7 @@ $limit = 4;
             <br>
             <div id="dssp" style="">
                 <div style="padding: 20px">
-                    <h1 id="title"><strong></strong>Danh sách sản phẩm</h1>
+                    <h1 id="title"><strong></strong>Danh sách đơn hàng</h1>
                     <a id="view-detail" href="./detail-bill-sell.php">Xem chi tiết</a>
                 </div>
                 <div>
@@ -92,7 +92,7 @@ $limit = 4;
             </div>
             <div id="dssp" style="">
                 <div style="padding: 20px">
-                    <h1 id="title"><strong></strong>Danh sách sản phẩm</h1>
+                    <h1 id="title"><strong></strong>Doanh thu cửa hàng</h1>
                     <a id="view-detail">Xem chi tiết</a>
                 </div>
                 <div>
