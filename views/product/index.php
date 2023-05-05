@@ -110,75 +110,6 @@
 
             <div class="filter container" style="text-align: center;">
                 <form action="#" method="get">
-                    <!-- <select title="Size" class="selectpicker" name="size" id="size" multiple required>
-                        <option value="s">S</option>
-                        <option value="m">M</option>
-                        <option value="l">L</option>
-                        <option value="xl">XL</option>
-                        <option value="xxl">XXL</option>
-                    </select> -->
-
-                    <!-- <div class="size-container filter">
-                        <div class="filter-title">Size</div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-size" value="s" />  S
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-size" value="m" />  M
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-size" value="l" />  L
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-size" value="xl" />  XL
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-size" value="xxl" />  XXL
-                        </div>
-                    </div>-->
-                    <!-- <select title="Màu sắc" class="selectpicker" name="color" id="color" multiple required>
-                        <option value="yellow" style="color: var(--yellow);">Vàng</option>
-                        <option value="green" style="color: var(--green);">Xanh lá</option>
-                        <option value="pink" style="color: var(--pink);">Hồng</option>
-                        <option value="red" style="color: var(--red);">Đỏ</option>
-                        <option value="white" style="color: var(--white);">Trắng</option>
-                        <option value="brown" style="color: var(--brown);">Nâu</option>
-                        <option value="black" style="color: var(--black);">Đen</option>
-                        <option value="orange" style="color: var(--orange);">Cam</option>
-                        <option value="violet" style="color: var(--violet);">Tím</option>
-                    </select> -->
-
-                    <!-- <div class="color-container filter">
-                        <div class="filter-title">Màu sắc</div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="yellow" />  Vàng
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="green" />  Xanh lá
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="pink" />  Hồng
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="red" />  Đỏ
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="white" />  Trắng
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="brown" />  Nâu
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="black" />  Đen
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="orange" />  Cam
-                        </div>
-                        <div class="filter-item">
-                            <input type="checkbox" class="filter-item-check pro-color" value="gray" />  Xám
-                        </div>
-                    </div> -->
-
                     <?php 
                         if(isset($_GET['type'])){
                             echo "<input type='hidden' name='type' value='".$_GET['type']."'>";
@@ -193,21 +124,9 @@
                             $controller->getCategoryListFilter();
                         ?>
                     </div>
-
-                    <!-- <select title="Mức giá" class="selectpicker" name="price" id="price" required>
-                        <option value="less_1m">Dưới đ1.000.000</option>
-                        <option value="1m-2m">đ1.000.000 - đ2.000.000</option>
-                        <option value="2m-3.5m">đ2.000.000 - đ3.500.000</option>
-                        <option value="3.5m-5m">đ3.500.000 - đ5.000.000</option>
-                        <option value="more_5m">Trên đ5.000.000</option>
-                    </select> -->
                     
                     <div class="price filter-content">
-                        <!-- <div class="price-title">Khoảng giá</div>
-                        <input type="hidden" name="hidden-minimum-price" value="0"></input>
-                        <input type="hidden" name="hidden-maximum-price" value="10000000"></input>
-                        <div id="price-show"></div>
-                        <div id="price-range"></div> -->
+
                         <div class="price-title">Khoảng giá</div>
                         <p style="font-size: 12px; margin-top:1rem;">Dùng slider hoặc nhập giá trị vào</p>
                         <div class="price-input">
@@ -227,15 +146,6 @@
                             <input type="range" class="range-max" min="0" max="10000000" value="10000000" step="500000">
                         </div>
                     </div>
-
-                    <!-- <select title="Mức chiết khấu" class="selectpicker" name="discount" id="discount" required>
-                        <-value="less_30">Dưới 30%</->
-                        <option value="30-50">30% - 50%</option>
-                        <option value="50-70">50% - 70%</option>
-                        <option value="more_70">Trên 70%</option>
-                        <option value="special">Giá đặc biệt</option>
-                    </select> -->
-
                     <button type="submit" class="btn btn-black btnFilter" id="filterbutton">Lọc</button>
                 </form>
             </div>

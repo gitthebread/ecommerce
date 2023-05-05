@@ -115,7 +115,7 @@
                     $typeController->getTypeListProduct();
                 ?>
                 <li class="nav-item">
-                    <a href="../../views/product/index.php" class="nav-item-link">
+                    <a href="../../views/sell/index.php" class="nav-item-link">
                         Kênh người bán
                     </a>
                 </li>
