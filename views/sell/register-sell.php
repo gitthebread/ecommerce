@@ -26,15 +26,15 @@
         <?php include_once "../../components/header.php"?>
     </header>
         <div class="content">
-        <form id="form-dk" action="xulydangnhap.php" method="post">
+        <form id="form-dk" action="handle-register-sell.php" method="post">
                 <h1 style="text-align:center; padding-top: 20px;">Đăng ký cửa hàng</h1>
                 <div class="form-group">
                     <label for="name">Tên cửa hàng: </label><br>
                     <input type="text" id="name" name="name" placeholder="Nhập tên cửa hàng vào đây">
                 </div>
                 <div class="form-group">
-                    <label for="sdt">Số điện thoại cửa hàng: </label><br>
-                    <input type="text" id="sdt" name="sdt" placeholder="Nhập số điện thoại vào đây ">
+                    <label for="phone">Số điện thoại cửa hàng: </label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại vào đây ">
                 </div>
                 <div class="form-group">
                     <label for="address">Địa chỉ cửa hàng: </label><br>
