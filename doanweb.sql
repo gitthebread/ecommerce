@@ -72,7 +72,7 @@ INSERT INTO `categories` (`id`, `name`, `status`) VALUES
 (4, 'Sách học tiếng Anh', 1),
 (5, 'Sách học tiếng Hàn', 1),
 (6, 'Sách học tiếng Trung', 1),
-(7, 'Truyện tranh', 1)
+(7, 'Truyện tranh', 1),
 (11, '',1);
 
 -- --------------------------------------------------------
