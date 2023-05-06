@@ -1,8 +1,8 @@
 <?php session_start()?>
 <div class="search-section d-flex justify-content-center align-items-center">
     <form class="search-form col-12 col-sm-10 col-lg-12" action="../../views/search/index.php" method="get">
-        <input name="searchstr" type="text" placeholder="TÌM KIẾM SẢN PHẨM" class="search-input">
-        <input type="submit" class="search-link btn btn-dark btn-lg" style="color:none!important;" value="Tìm kiếm">
+        <input name="searchstr" type="text" placeholder="Tìm kiếm theo tên sách" class="search-input">
+        <input type="submit" class="search-link btn btn-dark btn-lg" style="color: #ffffff !important; background-color: var(--main-color);" value="Tìm kiếm">
     </form> 
 
     <?php 
@@ -63,22 +63,22 @@
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php" class="nav-item-link">
-                Sản phẩm
+                Sách
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=0" class="nav-item-link">
-                Nam
+                Sách loại 1
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=1" class="nav-item-link">
-                Nữ
+                Sách loại 2
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=2" class="nav-item-link">
-                Trẻ em
+                Sách loại 3
             </a>
         </li>
     </ul>
@@ -105,7 +105,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="../../views/product/index.php" class="nav-item-link">
-                        Sản phẩm
+                        Sách
                     </a>
                 </li>
                 <?php

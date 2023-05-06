@@ -92,16 +92,6 @@ $(document).ready(function() {
 	});
 });
 
-//Heart active
-var isActiveBorder = true;
-	var heartIconList = document.querySelectorAll('.favorite-icon');
-	console.log(heartIconList);
-	for(let i = 0; i < heartIconList.length; i++) {
-		heartIconList[i].onclick = function() {
-		heartIconList[i].classList.toggle('active2')
-	}
-}
-
 //Hàm biến đổi đơn vị tiền tệ thành số nguyên. VD: 20.000đ -> 20000
 const formatNumber = (number) => {
 	return Number(number.replace(/[^0-9,-]+/g,""));

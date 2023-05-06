@@ -1,6 +1,6 @@
 /* KHAI BÁO BIẾN */
 :root {
-    --main-color: #373737;
+    --main-color: #3e5962;
     --white: #fff;
     --text-color: #6C6D70;
     --badget-bg: #fff;
@@ -10,7 +10,7 @@
     --yellow: #f4ed95;
     --red: #FF0004;
     --gray: #A8A9AD;
-    --black: #212529;
+    --black: #3e5962;
     --border-color: #221F20;
     --header-height: 5%
 }

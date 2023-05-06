@@ -58,24 +58,6 @@
                     </div>
                     <div class='card-body'>
                         <h5 class='card-title product-info'>
-                            <div class='list-color d-flex'>
-                                <div class='dot-list d-flex'>
-                                ";?>
-                                    <?php 
-                                        foreach ($arraycolor as $cpro){
-                                            $colorHex = color_format($cpro);
-                                            echo '<label class="color-button" style="background-color:#'.$colorHex.';" for="'.strtolower($cpro).'"></label>'; 
-                                        }
-                                    ?>
-                                <?php
-                                echo "
-                                </div>
-                                <div class='favorite'>
-                                    <span class='material-symbols-outlined favorite-icon'>
-                                        favorite
-                                    </span>
-                                </div>
-                            </div>
                             <div class='product-name'>
                                 ".$product->getName()."
                             </div>

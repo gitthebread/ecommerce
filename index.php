@@ -22,7 +22,7 @@
         <title>Home</title>
     </head>
     <body>
-        <div class="container">
+        <div class="container" style="text-align: center;">
             <?php
                 $message = "";
                 if(isset($_GET['msg'])) {
@@ -32,8 +32,9 @@
                 }
                 include_once "./components/header.php";
             ?>
-           
+
             <div class="home-body">
+
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -43,13 +44,13 @@
                     <!-- Images && content -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="./src/img/slider6.jpg"/>
+                            <img src="./src/img/slider3.jpg"/>
                         </div>
                         <div class="carousel-item">
-                            <img src="./src/img/slider5.jpg"/>
+                            <img src="./src/img/slider2.jpg"/>
                         </div>
                         <div class="carousel-item">
-                            <img src="./src/img/slider4.jpg"/>
+                            <img src="./src/img/slider1.jpg"/>
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -61,62 +62,129 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div id="best-seller">
-                    <div class="title">
+
+                <div class="best-seller">
+                    <div class="title" style="float: left; margin-top: 6rem;">
                         <p class="content">BEST SELLER</p>
                     </div>
+
+                    <div class="type-content">
+                        <div class='type-content-list block' id="product-list-best-seller"></div>
+                    </div>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 12rem;">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./src/img/trending5.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <img src="./src/img/trending4.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./src/img/trending3.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <img src="./src/img/trending2.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./src/img/trending1.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                                <div class="col-6">
+                                    <img src="./src/img/trending.jpg" style="height: 100%; width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <div class="best-seller">
+                    <div class="title" style="float: left; margin-top: 6rem;">
+                        <p class="content">Thể loại sách 1 được yêu mến nhất</p>
+                    </div>
                     <div class="type">
-                        <div class="type-list">
+                        <!-- <div class="type-list">
                             <div class="type-list-link">
-                                <div class="type-item">IVY Men</div>
+                                <div class="type-item">Sách 1</div>
                             </div>
                             <div class="type-list-link">
-                                <div class="type-item">IVY Women</div>
+                                <div class="type-item">Sách 2</div>
                             </div>
                             <div class="type-list-link">
-                                <div class="type-item">IVY Kid</div>
+                                <div class="type-item">Sách 3</div>
                             </div>
                             
-                        </div>
-
+                        </div> -->
                         <div class="type-content">
                             <div class='type-content-list block' id="product-list"></div>
                         </div>
                     </div>
-                    
-                </div>
-                <div class="banner">
-                    <div class="row">
-                        <div class="col-12 mb-4">
-                            <img src="./src/img/trending.jpg" class="top-img" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="./src/img/trending1.jpg" class=" bottom-left-img" alt="" style="width: 100%">
-                        </div>
-                        <div class="col-6">
-                            <img src="./src/img/trending2.jpg" class=" bottom-right-img" alt="" style="width: 100%">
+
+                    <div class="title" style="float: left; margin-top: 6rem;">
+                        <p class="content">Thể loại sách 2 được yêu mến nhất</p>
+                    </div>
+                    <div class="type">
+                        <!-- <div class="type-list">
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 1</div>
+                            </div>
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 2</div>
+                            </div>
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 3</div>
+                            </div>
+                            
+                        </div> -->
+                        <div class="type-content">
+                            <div class='type-content-list block' id="product-list1"></div>
                         </div>
                     </div>
-                    
+
+                    <div class="title" style="float: left; margin-top: 6rem;">
+                        <p class="content">Thể loại sách 3 được yêu mến nhất</p>
+                    </div>
+                    <div class="type">
+                        <!-- <div class="type-list">
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 1</div>
+                            </div>
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 2</div>
+                            </div>
+                            <div class="type-list-link">
+                                <div class="type-item">Sách 3</div>
+                            </div>
+                            
+                        </div> -->
+                        <div class="type-content">
+                            <div class='type-content-list block' id="product-list2"></div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="gallery">
-                    <div class="title">
-                        <p class="content">Gallery</p>
-                    </div>
                     <div class="gallery-list">
                         <div class="row">
-                            <div class="col-lg-3 col-md-3 col-6 gallery-item">
-                                <img src="./src/img/gallery/gallery-1.jpg" class="gallery-item-img" alt="">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-6 gallery-item">
-                                <img src="./src/img/gallery/gallery-2.jpg" class="gallery-item-img" alt="">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-6 gallery-item">
-                                <img src="./src/img/gallery/gallery-3.jpg" class="gallery-item-img" alt="">
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-6 gallery-item">
-                                <img src="./src/img/gallery/gallery-4.jpg" class="gallery-item-img" alt="">
-                            </div>
+                            <img src="./src/img/gallery/gallery-img.jpg" class="gallery-item-img" alt="">
                         </div>
                     </div>
                 </div>
@@ -132,24 +200,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script>
             $(document).ready(function() {
-                showProductByLimit(1, 4, 0);
-                function showProductByLimit(type, limit, offset) {
+                showProductByLimit(null, 4, 0, "product-list-best-seller");
+                showProductByLimit(0, 4, 0, "product-list");
+                showProductByLimit(1, 4, 0, "product-list1");
+                showProductByLimit(2, 4, 0, "product-list2");
+                function showProductByLimit(type, limit, offset, containerID) {
                     var xmlhttp = new XMLHttpRequest();
                     xmlhttp.onreadystatechange = function() {
                         if(this.readyState == 4 && this.status == 200) {
-                            document.getElementById("product-list").innerHTML = this.responseText;
+                            document.getElementById(containerID).innerHTML = this.responseText;
                         }
                     };
                     xmlhttp.open("GET", `./getproduct.php?type=${type}&limit=${limit}&offset=${offset}`, true);
                     xmlhttp.send();
                 }
-                linkProducts = document.getElementsByClassName('type-list-link');
-                console.log(linkProducts);
-                for(let i = 0; i < linkProducts.length; i++) {
-                    linkProducts[i].onclick = function() {
-                        showProductByLimit(i, 4, 0);
-                    }
-                }
+                // linkProducts = document.getElementsByClassName('type-list-link');
+                // console.log(linkProducts);
+                // for(let i = 0; i < linkProducts.length; i++) {
+                //     linkProducts[i].onclick = function() {
+                //         showProductByLimit(i, 8, 0);
+                //     }
+                // }
             })
         </script>
     </body>

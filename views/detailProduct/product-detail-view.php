@@ -60,18 +60,18 @@ if (!function_exists('color_format')) {
                                 <label class="size-btn" for="'.strtoupper($spro).'">'.strtoupper($spro).'</label>';  
                         }?>
             <?php
-            echo '
-                </div>
-                <div class="color-select">';
-            ?>
+            // echo '
+            //     </div>
+            //     <div class="color-select">';
+            // ?>
             <?php
-                    foreach ($arraycolor as $cpro) {
-                        $colorHex = color_format($cpro);
-                        echo '
-                            <input type="radio" class="color-selector" name="color" id="'.strtolower($cpro).'" value="'.strtolower($cpro).'" autocomplete="off" checked="">
-                            <label class="color-btn" style="background-color:#'.$colorHex.';" for="'.strtolower($cpro).'"></label>';
-                    }
-            ?>
+            //         foreach ($arraycolor as $cpro) {
+            //             $colorHex = color_format($cpro);
+            //             echo '
+            //                 <input type="radio" class="color-selector" name="color" id="'.strtolower($cpro).'" value="'.strtolower($cpro).'" autocomplete="off" checked="">
+            //                 <label class="color-btn" style="background-color:#'.$colorHex.';" for="'.strtolower($cpro).'"></label>';
+            //         }
+            // ?>
             <?php
             echo '
                 </div>
