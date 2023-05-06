@@ -11,7 +11,7 @@ html, body {
 }
 
 :root {
-    --main-color: #373737;
+    --main-color: #3e5962;
     --white: #fff;
     --text-color: #6C6D70;
     --badget-bg: #fff;
@@ -20,7 +20,7 @@ html, body {
     --brown: #c4b095;
     --yellow: #f4ed95;
     --gray: #A8A9AD;
-    --black: #212529;
+    --black: #3e5962;
     --border-color: #221F20;
     --orange: #fa800eef;
     --red: #eb1212;
@@ -149,7 +149,7 @@ html, body {
     .nav-icon .user {
         display: none;
     }
-    #best-seller .type .type-list .type-item {
+    .best-seller .type .type-list .type-item {
         font-size: 1.6rem;
     }
 
@@ -224,7 +224,7 @@ html, body {
     .nav-icon .user {
         display: none;
     }
-    #best-seller .type .type-list .type-item {
+    .best-seller .type .type-list .type-item {
         font-size: 1.4rem;
     }
     .product {
@@ -455,6 +455,9 @@ input[type="range"]::-moz-range-thumb{
 .card-body a {
     width: 100% !important;
     padding: 0 !important;
+    align-self: normal;
+    align-items: center;
+    margin-top: auto;
 }
 
 #product-body{
@@ -541,10 +544,6 @@ input[type="range"]::-moz-range-thumb{
     border-radius: 50%;
 }
 
-.product-detail .favorite{
-    cursor: pointer;
-}
-
 .green{
     background-color: #98a882;
 }
@@ -555,10 +554,6 @@ input[type="range"]::-moz-range-thumb{
 
 .yellow{
     background-color: #f4ed95;
-}
-
-.active-favorite{
-    color: red;
 }
 
 .product-detail .product-name {
@@ -602,8 +597,6 @@ input[type="range"]::-moz-range-thumb{
     border: 1px black solid;                
     transition: all 0.3s ease 0s;
     background-color: black;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     display: flex;
 }
 

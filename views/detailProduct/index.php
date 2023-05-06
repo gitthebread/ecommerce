@@ -75,8 +75,8 @@
         <!-- Size chart -->
         <div class='row introduction'>
             <div class='col-lg-12 col-12 sizechart'>
-                <h3>Size chart</h3>
-                <img class="sizechart-img" src='../../src/img/sizechart.jpg'>
+                <!-- <h3>Size chart</h3>
+                <img class="sizechart-img" src='../../src/img/sizechart.jpg'> -->
                 <div class='heading'>
                     <h2>Có thể bạn sẽ thích</h2>
                 </div>

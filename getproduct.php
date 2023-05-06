@@ -38,23 +38,35 @@
         
         if(isset($_GET['type'])) {
             $type = $_GET['type'];
-            $controller->getProductByTypeLimitHome($type, 4, 0);
-            echo "
-                <button class='type-button'>
-                    <a href='../views/product/index.php?type=".$type."' class='nav-item-link'>
-                        Xem tất cả
-                    </a>
-                </button>
-            ";
+            if ($type == 1 || $type == 0 || $type == 2){
+                $controller->getProductByTypeLimitHome($type, 4, 0);
+                // echo "
+                //     <button class='type-button'>
+                //         <a href='../views/product/index.php?type=".$type."' class='nav-item-link'>
+                //             Xem tất cả
+                //         </a>
+                //     </button>
+                // ";
+            }else{
+                $randomid = rand(0,2);
+                $controller->getProductByTypeLimitHome($randomid, 8, 0);
+                echo "
+                    <button class='type-button'>
+                        <a href='../views/product/index.php?type=1' class='nav-item-link'>
+                            Xem tất cả
+                        </a>
+                    </button>
+                ";
+            }
         }else {
             $controller->getProductByTypeLimitHome(1, 4, 0);
-            echo "
-                <button class='type-button'>
-                    <a href='../views/product/index.php?type=1' class='nav-item-link'>
-                        Xem tất cả
-                    </a>
-                </button>
-            ";
+            // echo "
+            //     <button class='type-button'>
+            //         <a href='../views/product/index.php?type=1' class='nav-item-link'>
+            //             Xem tất cả
+            //         </a>
+            //     </button>
+            // ";
         }
         
     ?>
