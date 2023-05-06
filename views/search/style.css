@@ -11,7 +11,7 @@ html, body {
 }
 
 :root {
-    --main-color: #373737;
+    --main-color: #3e5962;
     --white: #fff;
     --text-color: #6C6D70;
     --badget-bg: #fff;
@@ -20,7 +20,7 @@ html, body {
     --brown: #c4b095;
     --yellow: #f4ed95;
     --gray: #A8A9AD;
-    --black: #212529;
+    --black: #3e5962;
     --border-color: #221F20;
     --orange: #fa800eef;
     --red: #eb1212;
@@ -148,7 +148,7 @@ html, body {
     .nav-icon .user {
         display: none;
     }
-    #best-seller .type .type-list .type-item {
+    .best-seller .type .type-list .type-item {
         font-size: 1.6rem;
     }
 
@@ -199,9 +199,7 @@ html, body {
         float: right;
         font-size: 1rem;
     }
-    .logo {
-        width: 20%;
-    }
+
     .header-icon {
         font-size: 2rem;
     }
@@ -214,7 +212,7 @@ html, body {
     .nav-icon .user {
         display: none;
     }
-    #best-seller .type .type-list .type-item {
+    .best-seller .type .type-list .type-item {
         font-size: 1.4rem;
     }
     .product {
@@ -327,8 +325,6 @@ h2{
     padding: 1rem;
     border: 1px #221F20 solid;
     color: #6C6D70;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
     font-size: 1.5rem;
 }
 
@@ -436,10 +432,6 @@ h2{
     border-radius: 50%;
 }
 
-.product-detail .favorite{
-    cursor: pointer;
-}
-
 .green{
     background-color: #98a882;
 }
@@ -450,10 +442,6 @@ h2{
 
 .yellow{
     background-color: #f4ed95;
-}
-
-.active-favorite{
-    color: red;
 }
 
 .product-detail .product-name {
@@ -497,8 +485,6 @@ h2{
     border: 1px black solid;                
     transition: all 0.3s ease 0s;
     background-color: black;
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
     display: flex;
 }
 
@@ -509,7 +495,7 @@ h2{
 }
 
 .product-cart:hover{
-    background-color: white;                                                            
+    background-color: white !important;                                                            
 }
 
 .product-cart .product-cart-icon{

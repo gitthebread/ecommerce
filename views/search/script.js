@@ -10,15 +10,6 @@ cancelBtn.onclick = function() {
     category.classList.remove('active');
 }
 
-//Favorite Icon turn red
-var heartIconList = document.querySelectorAll('.favorite-icon');
-    console.log(heartIconList);
-    for(let i = 0; i < heartIconList.length; i++) {
-        heartIconList[i].onclick = function() {
-            heartIconList[i].classList.toggle('active-favorite')
-        }
-    }
-
 
 //Hàm biến đổi đơn vị tiền tệ thành số nguyên. VD: 20.000đ -> 20000
 const formatNumber = (number) => {

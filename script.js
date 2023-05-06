@@ -34,13 +34,7 @@ for(let i = 0; i < typeList.length; i++) {
     }
 }
 var isActiveBorder = true;
-var heartIconList = document.querySelectorAll('.favorite-icon');
-console.log(heartIconList);
-for(let i = 0; i < heartIconList.length; i++) {
-    heartIconList[i].onclick = function() {
-        heartIconList[i].classList.toggle('active2')
-    }
-}
+
 const searchIcon = document.querySelector('.search-icon');
 console.log(searchIcon);
 const searchSection = document.querySelector('.search-section');
