@@ -48,9 +48,7 @@ if (!function_exists('color_format')) {
                     <h3 id="prod_name">'.$product->getName().'</h3>
                 </div>
                 <div class="detail-pro-price">
-                    <span class="detail-pro-sale">-30%</span>
                     <span class="detail-pro-price" name="price">'.currency_format($product->getPrice()).'</span>
-                    <del>'.currency_format(2000000).'</del>
                 </div>
                 <div class="size-select">';?>
                     <?php

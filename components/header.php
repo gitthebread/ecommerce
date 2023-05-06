@@ -1,5 +1,5 @@
 <?php session_start()?>
-<div class="search-section d-flex justify-content-center align-items-center">
+<div class="search-section d-flex justify-content-center align-items-center" style="text-align: center;">
     <form class="search-form col-12 col-sm-10 col-lg-12" action="../../views/search/index.php" method="get">
         <input name="searchstr" type="text" placeholder="Tìm kiếm theo tên sách" class="search-input">
         <input type="submit" class="search-link btn btn-dark btn-lg" style="color: #ffffff !important; background-color: var(--main-color);" value="Tìm kiếm">
@@ -63,22 +63,22 @@
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php" class="nav-item-link">
-                Sách
+                Tất cả sách
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=0" class="nav-item-link">
-                Sách loại 1
+                5 đến 13 tuổi
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=1" class="nav-item-link">
-                Sách loại 2
+                13 đến 18 tuổi
             </a>
         </li>
         <li class="category-item">
             <a href="../../views/product/index.php?type=2" class="nav-item-link">
-                Sách loại 3
+                Trên 18 tuổi
             </a>
         </li>
     </ul>
@@ -88,7 +88,7 @@
 
 <div id="header">
     <div class="container">
-        <div class="logo">
+        <div class="logo" style="text-align: left;">
             <a href="../../index.php"><img src="../../src/img/logo.png" class="image" /></a>
         </div>
         <div id="navigation-bar">
@@ -105,7 +105,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="../../views/product/index.php" class="nav-item-link">
-                        Sách
+                        Tất cả sách
                     </a>
                 </li>
                 <?php

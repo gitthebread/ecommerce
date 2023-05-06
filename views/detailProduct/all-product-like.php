@@ -44,9 +44,6 @@ if (!function_exists('color_format')) {
             <div class="col-lg-3 col-md-6 col-6 products">
                 <div class="card">
                     <div class="pro-img">
-                        <span class="badget">
-                            -50%
-                        </span>
                         <a href="./index.php?page=detailproduct&id='.$product->getId().'">
                             <img class="pro-img pro-img-1 ProductImg" src="'.$product->getImage01().'">
                             <img class="pro-img" src="'.$product->getImage02().'">
@@ -65,8 +62,7 @@ if (!function_exists('color_format')) {
                         </h5>
                         <p class="card-text">
                             </p><div class="product-price d-flex">
-                                <div class="product-price__new">'.currency_format(750000).'</div>
-                                <strike><div class="product-price__old">'.currency_format($product->getPrice()).'</div></strike>
+                                <div class="product-price__new">'.currency_format($product->getPrice()).'</div>
                             </div>
                         <p></p>
                         <a href="./index.php?page=detailproduct&id='.$product->getId().'" class="btn btn-primary" style="background-color: transparent; border: none;">

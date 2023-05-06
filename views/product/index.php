@@ -56,14 +56,14 @@
             if(isset($_GET['type'])) {
                 $type = $_GET['type'];
                 if($type == 0)  {
-                    echo "Nam";
+                    echo "5 đến 13 tuổi";
                 }else if($type == 1) {
-                    echo "Nữ";
+                    echo "13 đến 18 tuổi";
                 }else if($type == 2) {
-                    echo "Trẻ em";
+                    echo "Trên 18 tuổi";
                 }
             }else {
-                echo "Sản phẩm";
+                echo "Tất cả sách";
             }
         ?>
     </title>
@@ -84,14 +84,14 @@
                         if(isset($_GET['type'])) {
                             $type = $_GET['type'];
                             if($type == 0)  {
-                                echo "Nam";
+                                echo "5 đến 13 tuổi";
                             }else if($type == 1) {
-                                echo "Nữ";
+                                echo "13 đến 18 tuổi";
                             }else if($type == 2) {
-                                echo "Trẻ em";
+                                echo "Trên 18 tuổi";
                             }
                         }else {
-                            echo "Sản phẩm";
+                            echo "Tất cả sách";
                         }
                     ?>
                 </li>

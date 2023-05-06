@@ -14,7 +14,6 @@
 .category {}
 .login-btn {}
 .category-list {}
-.category-item {}
 /* main header */
 #header {}
 .logo {}
@@ -196,6 +195,7 @@ img#ProductImg {
     transition: all 0.5s ease;
     position: relative;
     border: 0.2px solid;
+
     z-index: 1;
 }
 .detail-btn:hover {
@@ -211,7 +211,7 @@ img#ProductImg {
     z-index: 1;
 }
 .add-btn {
-    background-color: #000000;
+    background-color: var(--main-color);
     color: #FFFFFF;
     cursor: pointer;
     position: relative;
@@ -258,7 +258,7 @@ img#ProductImg {
 }
 .buy-btn:hover {
     color: #ffffff;
-    background-color: #000;
+    background-color: var(--main-color);
     border: 0.2px solid #000;
 }
 .buy-btn:hover::before {

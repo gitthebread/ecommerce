@@ -16,6 +16,13 @@
     --border-color: #221F20;
 }
 
+.line{
+    height: 1px;
+    background: black;
+    border: 1px solid black;
+    margin-top: 6rem;
+}
+
 .search-form{
     width: 40%;
     border: none;
@@ -598,7 +605,10 @@ input.search-link:hover {
     text-transform: uppercase;
     color: var(--text-color);
     cursor: pointer;
-}
+    text-align: center !important;
+    align-self: center !important;
+    justify-content: center !important;
+}   
 
 .category-list .category-item:hover {
     opacity: 0.8;
@@ -640,7 +650,7 @@ input.search-link:hover {
 
 .best-seller .title {
     align-self: left;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     letter-spacing: 0.1rem;
     font-weight: bold;
     color: #221F20;;
@@ -858,8 +868,8 @@ input.search-link:hover {
 }
 
 .type-button:hover {
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--main-color) !important;
+    color: var(--white) !important;
 }
 
 .banner {

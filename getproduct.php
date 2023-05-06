@@ -50,13 +50,13 @@
             }else{
                 $randomid = rand(0,2);
                 $controller->getProductByTypeLimitHome($randomid, 8, 0);
-                // echo "
-                //     <button class='type-button'>
-                //         <a href='../views/product/index.php?type=1' class='nav-item-link'>
-                //             Xem tất cả
-                //         </a>
-                //     </button>
-                // ";
+                echo "
+                    <button class='type-button'>
+                        <a href='../views/product/index.php?type=1' class='nav-item-link'>
+                            Xem tất cả
+                        </a>
+                    </button>
+                ";
             }
         }else {
             $controller->getProductByTypeLimitHome(1, 4, 0);

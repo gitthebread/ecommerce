@@ -63,9 +63,11 @@
                     </a>
                 </div>
 
+                <div class="line"></div>
+
                 <div class="best-seller">
-                    <div class="title" style="float: left; margin-top: 6rem;">
-                        <p class="content">BEST SELLER</p>
+                    <div class="title" style="float: left; margin-top: 0rem;">
+                        <p class="content">BÁN CHẠY NHẤT</p>
                     </div>
 
                     <div class="type-content">
@@ -73,7 +75,9 @@
                     </div>
                 </div>
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 12rem;">
+                <div class="line"></div>
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin-top: 6rem;">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
@@ -118,7 +122,7 @@
 
                 <div class="best-seller">
                     <div class="title" style="float: left; margin-top: 6rem;">
-                        <p class="content">Thể loại sách 1 được yêu mến nhất</p>
+                        <p class="content">Mẹ và các bé: cùng nhau đọc sách</p>
                     </div>
                     <div class="type">
                         <!-- <div class="type-list">
@@ -139,7 +143,7 @@
                     </div>
 
                     <div class="title" style="float: left; margin-top: 6rem;">
-                        <p class="content">Thể loại sách 2 được yêu mến nhất</p>
+                        <p class="content">Những tựa sách tuyệt vời cho tuổi trẻ</p>
                     </div>
                     <div class="type">
                         <!-- <div class="type-list">
@@ -160,7 +164,7 @@
                     </div>
 
                     <div class="title" style="float: left; margin-top: 6rem;">
-                        <p class="content">Thể loại sách 3 được yêu mến nhất</p>
+                        <p class="content">Kiến thức bổ ích cho tuổi trưởng thành</p>
                     </div>
                     <div class="type">
                         <!-- <div class="type-list">
@@ -181,10 +185,12 @@
                     </div>
                 </div>
 
-                <div class="gallery">
+                <div class="line"></div>
+
+                <div class="gallery" style="max-width: 100%;">
                     <div class="gallery-list">
                         <div class="row">
-                            <img src="./src/img/gallery/gallery-img.jpg" class="gallery-item-img" alt="">
+                            <img src="./src/img/gallery/gallery-img.jpg" style="max-width: 100%; width: 100%;">
                         </div>
                     </div>
                 </div>

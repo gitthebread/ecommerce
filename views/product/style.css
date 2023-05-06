@@ -455,6 +455,9 @@ input[type="range"]::-moz-range-thumb{
 .card-body a {
     width: 100% !important;
     padding: 0 !important;
+    align-self: normal;
+    align-items: center;
+    margin-top: auto;
 }
 
 #product-body{

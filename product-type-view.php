@@ -5,9 +5,6 @@
             <div class='col-lg-3 col-md-6 col-6 product'>
                 <div class='card'>
                     <div class='product-img'>
-                        <span class='badget'>
-                            -50%
-                        </span>
                         <a href='./views/detailProduct/index.php?id=".$product->getId()."'>
                             <img src='".$product->getImage02()."' class='product-img-content product-img-2'/>
                             <img src='".$product->getImage01()."' class='product-img-content product-img-1'/>
@@ -27,7 +24,6 @@
                         <p class='card-text'>
                             <div class='product-price d-flex'>
                                 <div class='product-price__new'>".currency_format($product->getPrice())."</div>
-                                <strike><div class='product-price__old'>1.150.000đ</div></strike>
                             </div>
                         </p>
                         <a href='./views/detailProduct/index.php?id=".$product->getId()."' class='btn btn-primary' style='background-color: transparent; border: none;'>
