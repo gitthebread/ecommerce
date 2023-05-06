@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chi tiết sản phẩm</title>
+    <title>Sửa sản phẩm</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -24,32 +23,64 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
 </head>
-
 <body>
+    <?php session_start() ?>
     <div id="container">
         <header>
             <?php include_once "../../components/header_sell.php" ?>
         </header>
         <div id="title">
-            <h1><strong>Danh sách đơn hàng</strong></h1>
+            <h1><strong>Sửa thông tin sản phẩm</strong></h1>
         </div>
-        <br>
-        <div>
-            <!-- Hiển thị bảng dữ liệu ở đây (có phân trang) -->
+        <div id='content'>
+        <?php 
+            include_once "../../controllers/productController.php";
+            $controller = new productController();
+            $controller->showDataToUpdate($_GET['id']);
+        ?>
         </div>
     </div>
 </body>
-</body>
-
 </html>
 <style>
     #title {
         border: 1px solid #393646;
         display: inline-block;
-        margin-left: 40%;
+        margin-left: 35%;
         margin-top: 20px;
         padding: 20px;
         border-radius: 30px;
         background-color: #FFA559;
+    }
+    #suasp
+    {
+        margin: 50px auto;
+        margin-left: 20%;
+        margin-right: 20%;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+    .form-group input
+    {
+        border: none;
+        background-color: lightgrey;
+        width: 90%;
+        padding: 12px 20px;
+    }
+    .form-group
+    {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .form-group input:focus
+    {
+        background-color: #E8B972;
+    }
+    #submit-sua
+    {
+        background-color: #D5A01C ;
+        width: 50% ;
+        margin-left: 20%;
+        margin-bottom: 30px;
     }
 </style>

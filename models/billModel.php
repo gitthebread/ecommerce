@@ -56,5 +56,31 @@
             }
             return $data;
         }
+        public function getBill($id_bill)
+        {
+            $result = NULL;
+            $link = NULL;
+            taoKetNoi($link);
+            $data = NULL;
+            $query = "SELECT * from bill where id = $id_bill";
+            $result = chayTruyVanTraVeDL($link, $query);
+            if(mysqli_num_rows($result) > 0) {
+                $rows = mysqli_fetch_array($result);
+                $data = new Bill($rows["id"], $rows["cus_firstName"], $rows["cus_lastName"], $rows["email"], $rows['phoneNumber'], $rows['total'], $rows['address'], $rows['status']);
+                giaiPhongBoNho($link, $result);
+            }
+            return $data;
+        }
+        public function getRevenue($owner)
+        {
+            $result = NULL;
+            $link = NULL;
+            taoKetNoi($link);
+            $data = array();
+            $query = "SELECT SUM(total) as revenue FROM bill INNER JOIN detail_bill ON bill.id = detail_bill.bill_id INNER JOIN products ON detail_bill.product_name = products.name where owner = '$owner'";
+            $result = chayTruyVanTraVeDL($link, $query);
+            $rows = mysqli_fetch_assoc($result);
+            return $rows["revenue"];
+        }
     }
 ?>

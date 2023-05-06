@@ -145,5 +145,31 @@
             }
             return $data;
         }
+        public function getNameById($id)
+        {
+            $link = null;
+            taoKetNoi($link);
+            $result = chayTruyVanTraVeDL($link, "select name from categories where id = $id and status = 1");
+            $row = mysqli_fetch_row($result);
+            giaiPhongBoNho($link, $result);
+            return $row[0];
+        }
+        public function getMaxID()
+        {
+            $link = null;
+            taoKetNoi($link);
+            $result = chayTruyVanTraVeDL($link, "select MAX(id) from categories where status = 1");
+            $row = mysqli_fetch_row($result);
+            giaiPhongBoNho($link, $result);
+            return $row[0];
+        }
+        public function checkId($id)
+        {
+            $link = null;
+            taoKetNoi($link);
+            $result = chayTruyVanTraVeDL($link, "select count(*) from categories where id = $id and status = 1");
+            $row = mysqli_fetch_row($result);
+            return ($row[0] > 0)? true : false;
+        }
     }    
 ?>

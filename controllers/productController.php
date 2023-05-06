@@ -2,13 +2,19 @@
 
     $filepath = realpath(dirname(__FILE__));
     include_once ($filepath. '/../models/productModel.php');
+    include_once ($filepath. '/../models/categoryProductModel.php');
+    include_once ($filepath. '/../models/typeModel.php');
 ?>
 
 <?php 
     class ProductController {
         public $model;
+        public $category_model;
+        public $type_model;
         public function __construct() {
             $this->model = new ProductModel();
+            $this->category_model = new CategoryProductModel();
+            $this->type_model = new TypeModel();
         }
         public function getAllProduct() {
             $data = $this->model->getAllProduct();
@@ -213,6 +219,79 @@
             $type = isset($_GET['type'])?$_GET['type']:null;
 
             include_once "../../views/product/filterProduct.php";
+        }
+        public function getAllProductByLimit_Sell($owner, $limit, $offset)
+        {
+            $data = $this->model->getAllProductByLimit_Sell($owner, $limit, $offset);
+            include_once "../../views/sell/product-home-view.php";
+        }
+        public function getAllProductWithPagination_sell($owner)
+        {
+            $page = isset($_GET["page"])? $_GET["page"]:1;
+            $page = is_numeric($page)?$page : 1;
+            $pagesize = 6;
+            $from = ($page-1)*$pagesize;
+            $ListProduct = $this->model->getAllProductWithPagination($owner, $from, $pagesize);
+            $total = ceil($this->model->CountAll_sell($owner)/$pagesize); 
+            include_once "../../views/sell/product-view.php";
+        }
+        public function getProductById_sell($id) {
+            $data = $this->model->getProductById_sell($id);
+            include_once "../../views/sell/product-detail-view.php";
+        }
+        public function showDataToUpdate($id)
+        {
+            if(isset($_GET["id"]))
+            {
+                $data = $this->model->getProductById_sell($id);
+                if($data->getSize() == 'Thường')
+                {
+                    $select1 = 'selected';
+                    $select2 = '';
+                    $select3 ='';
+                }
+                else
+                {
+                    if($data->getSize() == 'Đặc biệt')
+                    {
+                        $select2 = 'selected';
+                        $select1 = '';
+                        $select3 = '';
+                    }
+                    else
+                    {
+                        $select3 = 'selected';
+                        $select2 = '';
+                        $select1 = '';
+                    }
+                }
+            }
+            include_once "../../views/sell/update-product-view.php";
+        }
+        public function updateProduct_sell($id, $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc)
+        {
+            if(isset($_POST['action']))
+            {
+                if($this->category_model->checkId($id_category) && $this->type_model->checkId($id_type))
+                {
+                    $this->model->updateProduct_sell($id, $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc);
+                }
+                else
+                {
+                    header("Location: ../../views/sell/update-product.php?id=$id");
+                }
+                
+            }
+        }
+        public function deleteProduct_sell($id)
+        {
+            $this->model->deleteProduct_sell($id);
+            header("Location: ../../views/sell/product.php");
+        }
+        public function addProduct_sell($owner, $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc)
+        {
+            $this->model->addProduct_sell($owner, $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc);
+            header("Location: ../../views/sell/product.php");
         }
     }
 ?>

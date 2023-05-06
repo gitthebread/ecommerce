@@ -1,4 +1,7 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <?php
     echo
     "
         <table style='font-size: 20px; margin-top: 10px;'>
@@ -10,24 +13,26 @@
                 <th style='text-align: center; '></th> 
             </tr>
     ";
-    foreach($data as $Product)
+    foreach($ListProduct as $Product)
     {
         echo
         "
-            <tr>
-            <td style='text-align: center; width: 50px;'>".$Product->getId()."</td>
-            <td style='text-align:center; width: 200px;'><img src='".$Product->getImage01()."' style='width: 200px;height: 150px'></td>
-            <td style='text-align: center; width: 400px;'>".$Product->getName()."</td>
-            <td style='text-align: center; width: 200px;'>".$Product->getQuantity()."</td>
-            <td style='text-align: center; width: 200px;'>
-                <a href='./product-detail.php?id=".$Product->getId()."'>Xem chi tiết</a><br>
-                <a href='./update-product.php?id=".$Product->getId()."'>Sửa</a><br>
-                <a style='color:red'data-toggle='modal' data-target='#mymodal".$Product->getId()."'>Xóa</a>
-            </td>
-            </tr>
+            
+                <tr>
+                <td style='text-align: center; width: 50px;'>".$Product->getId()."</td>
+                <td style='text-align:center; width: 200px;'><img src='".$Product->getImage01()."' style='width: 200px;height: 150px'></td>
+                <td style='text-align: center; width: 400px;'>".$Product->getName()."</td>
+                <td style='text-align: center; width: 200px;'>".$Product->getQuantity()."</td>
+                <td style='text-align: center; width: 200px;'>
+                    <a href='./product-detail.php?id=".$Product->getId()."'>Xem chi tiết</a><br>
+                    <a href='./update-product.php?id=".$Product->getId()."'>Sửa</a><br>
+                    <a style='color:red'data-toggle='modal' data-target='#mymodal".$Product->getId()."'>Xóa</a>
+                </td>
+                </tr>
         ";
     }
-    foreach($data as $product)
+    echo "</table>";
+    foreach($ListProduct as $product)
     {
         echo 
         "
@@ -48,5 +53,17 @@
         </div>
         ";
     }
-    echo "</table>";
-?>
+    echo "
+    <div style='display: inline-flex; background-color: #A3A2A0; font-size: 20px; margin-left: 45%; margin-top: 10px;'>
+    Page: ";
+    for($i = 1; $i <= $total; $i++)
+    {
+        echo
+        "
+            <a style='color: black; margin-left: 5px;' href='./product.php?page=".$i."'>$i</a>|
+        ";
+    }
+    echo "</div>"
+    ?>
+</body>
+</html>

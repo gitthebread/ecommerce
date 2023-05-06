@@ -26,5 +26,15 @@
             $data = $this->model->getAllBill();
             include_once "../../views/admin/dashboard-view.php";
         }
+        public function showCusInfo($id_bill)
+        {
+            $data = $this->model->getBill($id_bill);
+            include_once "../../views/sell/cusInfo-view.php";
+        }
+        public function getRevenue($owner)
+        {
+            $data = $this->model->getRevenue($owner);
+            return $data*1000000;
+        }
     }
 ?>
