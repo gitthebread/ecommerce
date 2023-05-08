@@ -74,31 +74,39 @@ $limit = 4;
             <div id="dssp" style="">
                 <div style="padding: 20px">
                     <h1 id="title"><strong></strong>Danh sách sản phẩm</h1>
-                    <a id="view-detail" href="./detail-prouduct.php">Xem chi tiết</a>
+                    <a id="view-detail" href="./product.php">Xem tất cả</a>
                 </div>
                 <div>
-                    <!-- Hiển thị bảng dữ liệu ở đây (khoảng 4 dữ liệu) -->
+                    <?php
+                        include_once "../../controllers/productController.php";
+                        $controller = new ProductController();
+                        $controller->getAllProductByLimit_Sell($_SESSION['username'], 4 , 0);
+                    ?>
                 </div>
             </div>
             <br>
             <div id="dssp" style="">
                 <div style="padding: 20px">
                     <h1 id="title"><strong></strong>Danh sách đơn hàng</h1>
-                    <a id="view-detail" href="./detail-bill-sell.php">Xem chi tiết</a>
+                    <a id="view-detail" href="./bill.php">Xem tất cả</a>
                 </div>
                 <div>
-                    <!-- Hiển thị bảng dữ liệu ở đây (khoảng 4 dữ liệu) -->
+                    <?php
+                        include_once "../../controllers/bill_billDetailController.php";
+                        $controller = new bill_billDetailController();
+                        $controller->getAllByLimit($_SESSION['username'], 0 , 4);
+                    ?>
                 </div>
             </div>
-            <div id="dssp" style="">
-                <div style="padding: 20px">
-                    <h1 id="title"><strong></strong>Doanh thu cửa hàng</h1>
-                    <a id="view-detail">Xem chi tiết</a>
-                </div>
-                <div>
-                    <!-- Hiển thị bảng dữ liệu ở đây (khoảng 4 dữ liệu) -->
-                </div>
-            </div>
+            
+            <?php  
+                include_once "../../controllers/billController.php";
+                $controller = new billController();
+                echo
+                "<p id='revenue'><strong>Doanh thu cửa hàng:   </strong>".number_format($controller->getRevenue($_SESSION['username']))." đ</p>"
+            ?>
+                    
+            
         </div>
     </div>
 </body>
@@ -116,5 +124,21 @@ $limit = 4;
         padding: 10px;
         border-radius: 20px;
         margin-left: 20px;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    #revenue
+    {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 20px;  
     }
 </style>
