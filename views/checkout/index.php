@@ -147,7 +147,7 @@
                                                     $detailBillController = new BillDetailController();
                                                     $billController->getAllBill($_POST['checkout-info-name'], $_POST['checkout-info-email'], $_POST['checkout-info-number'], $_POST['total'], $_POST['checkout-info-address']);
                                                 }else {
-                                                    //2 phương thức thanh toán kia
+                                                    //Phương thức thanh toán kia
                                                     $totalValue = rtrim($_POST['total-1'], "đ");
                                                     $checkoutController = new CheckoutController();
                                                     $checkoutController->onlineCheckout($totalValue, $_POST['checkout-info-name'], $_POST['checkout-info-email'], $_POST['checkout-info-number'], $_POST['total'], $_POST['checkout-info-address']);
