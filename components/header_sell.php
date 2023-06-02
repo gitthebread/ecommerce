@@ -1,10 +1,15 @@
 <div id="header" style="position: relative !important; width: 100%">
     <div class="header-top-wrap">
         <div class="header-top-left">
-            <p>Kênh người bán</p>
+            <p style="font-size: 20px">Kênh người bán</p>
         </div>
+
         <div class="header-top-right">
+            
             <div>
+                <a href="home.php">Trang chủ người bán</a>
+                <a> || </a>
+                <a href="../../index.php">Trang chủ người mua</a>
                 <a href="https://www.facebook.com/nam.thang.7121" target="_blank"><i class="media-header fa-solid fa-bell"></i></a>
                 <i class="fa-solid fa-user"></i>
                 <?php

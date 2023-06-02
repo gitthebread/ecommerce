@@ -98,5 +98,9 @@
             $data = $this->model->getCategoryByNameLimit($name, $limit, $offset);
             include_once "../../views/admin/category-view.php";
         }
+        public function getMaxID()
+        {
+            return $this->model->getMaxID();
+        }
     }
 ?>

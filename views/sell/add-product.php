@@ -24,7 +24,15 @@
 
 </head>
 <body>
-<?php session_start() ?>
+    <?php 
+        session_start();
+        include_once "../../controllers/categoryProductController.php";
+        include_once "../../controllers/typeController.php";
+        $categoryController = new CategoryProductController();
+        $typeController = new TypeController();
+        $categoryMaxID = $categoryController->getMaxID();
+        $typeMaxID = $typeController->getMaxID();
+    ?>
     <div id="container">
         <header>
             <?php include_once "../../components/header_sell.php" ?>
@@ -58,14 +66,14 @@
                 </div>
                 <div class='form-group'>
                     <label for='id_category'>Id thể loại: </label>
-                    <input type='number' min='1' max = '".$this->category_model->getMaxID()."' id='id_category' name='id_category' >
+                    <input type='number' min='1' max='<?php echo $categoryMaxID; ?>' id='id_category' name='id_category'>
                 </div>
                 <div class='form-group'>
                     <label for='id_type'>Id type: </label>
-                    <input type='number' min='0' max = '".$this->type_model->getMaxID()."' id='id_type' name='id_type' >
+                    <input type='number' min='0' max = '<?php echo $typeMaxID ?>' id='id_type' name='id_type' >
                 </div>
                 <div class='form-group'>
-                    <label for='size'>Thời gian: </label>
+                    <label for='size'>Size: </label>
                     <select id='size' name='size' class='form-control form-control-lg select' style='height: 50px; width: 90%; font-size: 20px;'>
                         <option value='1' >Thường</option>
                         <option value='2' >Đặc biệt</option>

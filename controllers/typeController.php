@@ -25,5 +25,9 @@
             $data = $this->model->getTypeList();
             include_once "../../views/admin/type-update-product-view.php";
         }
+        public function getMaxID()
+        {
+            return $this->model->getMaxID();
+        }
     }
 ?>
