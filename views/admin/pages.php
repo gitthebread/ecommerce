@@ -32,6 +32,9 @@
                 case 'manage-customer':
                     include_once "manage-customer.php";
                     break;
+                case 'manage-owner':
+                    include_once "manage-owner.php";
+                    break;
                 case 'statistic':
                     include_once "statistic.php";
                     break;

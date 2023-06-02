@@ -25,5 +25,9 @@
             $data = $this->model->getAllWithPagination($owner, $from, $pagesize);
             include_once "../../views/sell/bill-view.php";
         }
+        public function getCount($owner)
+        {
+            return $this->model->getCount($owner);
+        }
     }
 ?>

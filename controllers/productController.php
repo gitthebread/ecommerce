@@ -4,6 +4,7 @@
     include_once ($filepath. '/../models/productModel.php');
     include_once ($filepath. '/../models/categoryProductModel.php');
     include_once ($filepath. '/../models/typeModel.php');
+    include_once ($filepath. '/../models/ownerModel.php');
 ?>
 
 <?php 
@@ -11,10 +12,12 @@
         public $model;
         public $category_model;
         public $type_model;
+        public $owner_model;
         public function __construct() {
             $this->model = new ProductModel();
             $this->category_model = new CategoryProductModel();
             $this->type_model = new TypeModel();
+            $this->owner_model = new ownerModel();
         }
         public function getAllProduct() {
             $data = $this->model->getAllProduct();
@@ -292,6 +295,15 @@
         {
             $this->model->addProduct_sell($owner, $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc);
             header("Location: ../../views/sell/product.php");
+        }
+        public function showAllOwner()
+        {
+            $data = $this->owner_model->getOwner();
+            include_once "../../views/admin/product-detail-view.php";
+        }
+        public function CountAll_Sell($owner)
+        {
+            return $this->model->CountAll_Sell($owner);
         }
     }
 ?>

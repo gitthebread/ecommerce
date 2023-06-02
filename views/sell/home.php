@@ -51,6 +51,7 @@ $limit = 4;
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e50213ec74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/dashboard.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../style.css">
     <script src="https://kit.fontawesome.com/a76b54ad15.js" crossorigin="anonymous"></script>
@@ -71,6 +72,41 @@ $limit = 4;
             <?php include_once "../../components/header_sell.php" ?>
         </header>
         <div>
+        <div class="dashboard-page">
+    <?php
+        include_once "../../controllers/productController.php";
+        include_once "../../controllers/bill_billDetailController.php";
+        include_once "../../controllers/billController.php";
+        $product_controller = new ProductController();
+        $bill_controller = new bill_billDetailController();
+        $controller = new billController();
+
+        $totalSoldProduct = $product_controller->CountAll_Sell($_SESSION['username']);
+        $totalBill = $bill_controller->getCount($_SESSION['username']);
+        $revenue = $controller->getRevenue($_SESSION['username']);
+    ?>
+    <div class="row dashboard-body">
+        <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
+            <div class="dashboard-item-content">
+                <p class="dashboard-item-content-value"><?php echo number_format($revenue)?> đồng</p>
+                <p class="dashboard-item-content-title">Doanh thu</p>
+                
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
+            <div class="dashboard-item-content">
+                <p class="dashboard-item-content-value"><?php echo $totalSoldProduct?></p>
+                <p class="dashboard-item-content-title">Sản phẩm</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
+            <div class="dashboard-item-content">
+                <p class="dashboard-item-content-value"><?php echo $totalBill?></p>
+                <p class="dashboard-item-content-title">Đơn hàng</p>
+            </div>
+        </div>
+    </div>
+</div>
             <div id="dssp" style="">
                 <div style="padding: 20px">
                     <h1 id="title"><strong></strong>Danh sách sản phẩm</h1>
@@ -99,16 +135,11 @@ $limit = 4;
                 </div>
             </div>
             
-            <?php  
-                include_once "../../controllers/billController.php";
-                $controller = new billController();
-                echo
-                "<p id='revenue'><strong>Doanh thu cửa hàng:   </strong>".number_format($controller->getRevenue($_SESSION['username']))." đ</p>"
-            ?>
                     
             
         </div>
     </div>
+    
 </body>
 
 </html>

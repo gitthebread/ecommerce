@@ -228,3 +228,9 @@
     font-size: 40px;
 }
 }
+
+
+th {
+    background-color: orange;
+    color: #333;
+}

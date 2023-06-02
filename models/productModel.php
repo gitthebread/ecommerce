@@ -502,6 +502,13 @@
             "insert into products (owner, `name`, color, size, `price`, quantity, type, `description`,category_id, `image01`, image02, `status`) 
             values ('$owner', '$name', '', '$size', $price, $quantity, $id_type, '$desc', $id_category, '$img', '$img', 1)");
         }
+        public function firedOwner($username)
+        {
+            $link = null;
+            taoKetNoi($link);
+            $query = "update products set `owner`= '' where owner = $username";
+            chayTruyVanTraVeDL($link, $query);
+        }
     }    
 ?>
 

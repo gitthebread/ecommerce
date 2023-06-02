@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-lg-3 d-lg-block menu">
                     <div class="menu-logo">
-                        <img src="../../src/img/logo.png" alt="">
+                        <!-- <img src="../../src/img/logo.png" alt=""> -->
                     </div>
                     
                     <div class="menu-list">
@@ -60,6 +60,14 @@
                                 <div class="content">Sản phẩm</div>
                             </a>
                         </div>
+                        <!-- <div class="menu-item">
+                            <a href="manage-owner.php" class="menu-item-link">
+                                <span class="material-symbols-outlined">
+                                    inventory_2
+                                </span>
+                                <div class="content">Người bán</div>
+                            </a>
+                        </div> -->
                         <!-- <div class="menu-item">
                             <a href="?page=manage-customer" class="menu-item-link">
                                 <span class="material-symbols-outlined">
