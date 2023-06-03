@@ -1,7 +1,8 @@
-<?php 
-    include_once "../../modules/db_module.php";
-    include_once "../../models/categoryProduct.php";
-    include_once "../../validate_module.php";
+<?php
+    $filepath = realpath(dirname(__FILE__));
+    include_once ($filepath. '/../modules/db_module.php');
+    include_once ($filepath. '../../models/categoryProduct.php');
+    include_once ($filepath. '/../validate_module.php');
 
     class CategoryProductModel {
         //Lấy ra danh sách danh mục sản phẩm
