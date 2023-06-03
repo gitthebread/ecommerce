@@ -52,10 +52,10 @@ if (!function_exists('color_format')) {
                 </div>
                 <div class="size-select">';?>
                     <?php
-                        foreach ($arraysize as $spro) { 
+                        foreach ($arraysize as $spro){ 
                             echo '
-                                <input type="radio" class="size-selector" name="size" id="'.strtoupper($spro).'" value="'.strtoupper($spro).' "autocomplete="off" checked="">
-                                <label class="size-btn" for="'.strtoupper($spro).'">'.strtoupper($spro).'</label>';  
+                                <input type="radio" class="size-selector" name="size" id="'.$spro.'" value="'.$spro.' "autocomplete="off" checked="">
+                                <label class="size-btn" for="'.$spro.'">'.$spro.'</label>';  
                         }?>
             <?php
             // echo '
@@ -101,20 +101,6 @@ if (!function_exists('color_format')) {
                             '.$product->getDescription().'
                         </div>
                     </div>
-                </div>
-                <div class="desc">
-                    <p class="desc-policy">
-                        <i class="fa-solid fa-truck-fast"></i>
-                        Giao hàng toàn quốc
-                    </p>
-                    <p class="desc-policy"> 
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        Cam kết chính hãng
-                    </p>
-                    <p class="desc-policy">
-                        <i class="fa-solid fa-chess-queen"></i>
-                        Bảo hành trọn đời
-                    </p>
                 </div>';
             ?>
         </form>

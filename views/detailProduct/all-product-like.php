@@ -67,10 +67,7 @@ if (!function_exists('color_format')) {
                         <p></p>
                         <a href="./index.php?page=detailproduct&id='.$product->getId().'" class="btn btn-primary" style="background-color: transparent; border: none;">
                             <div class="product-cart">
-                                <span class="material-symbols-outlined product-cart-icon">
-                                    local_mall
-                                </span>
-                                <p class="product-cart-buy">Mua ngay</p>
+                                <p class="product-cart-buy">QUICK ADD</p>
                             </div>
                         </a>
                     </div>

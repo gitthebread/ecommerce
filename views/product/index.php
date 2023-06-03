@@ -125,7 +125,7 @@
                         ?>
                     </div>
                     
-                    <div class="price filter-content">
+                    <!-- <div class="price filter-content">
 
                         <div class="price-title">Khoảng giá</div>
                         <p style="font-size: 12px; margin-top:1rem;">Dùng slider hoặc nhập giá trị vào</p>
@@ -145,8 +145,8 @@
                             <input type="range" class="range-min" min="0" max="10000000" value="0" step="500000">
                             <input type="range" class="range-max" min="0" max="10000000" value="10000000" step="500000">
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-black btnFilter" id="filterbutton">Lọc</button>
+                    </div> -->
+                    <button type="submit" class="btn btn-black btnFilter" id="filterbutton">Filter</button>
                 </form>
             </div>
         </div>
