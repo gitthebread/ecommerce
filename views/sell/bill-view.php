@@ -1,4 +1,6 @@
 <?php
+    if($data != null)
+    {
     echo
     "
         <table style='font-size: 20px; margin-top: 10px;'>
@@ -35,5 +37,10 @@
             <a style='color: black; margin-left: 5px;' href='./bill.php?page=".$i."'>$i</a>|
         ";
     }
-    echo "</div>"
+    echo "</div>";
+    }
+    else
+    {
+        echo "<p style = 'font-size: 25px'>Chưa có đơn hàng nào</p>";
+    }
 ?>

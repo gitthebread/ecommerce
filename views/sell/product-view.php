@@ -2,6 +2,8 @@
 <html lang="en">
 <body>
     <?php
+    if(count($ListProduct) != 0)
+    {
     echo
     "
         <table style='font-size: 20px; margin-top: 10px;'>
@@ -63,7 +65,12 @@
             <a style='color: black; margin-left: 5px;' href='./product.php?page=".$i."'>$i</a>|
         ";
     }
-    echo "</div>"
+    echo "</div>";
+    }
+    else
+    {
+        echo "<p style = 'font-size: 25px'>Chưa có sản phẩm nào</p>";
+    }
     ?>
 </body>
 </html>

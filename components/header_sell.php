@@ -17,11 +17,7 @@
                     echo
                     "
                         <label for='ckb_tk' id='lb_tk'>" . $_SESSION['username'] . "</label><br>
-                        <input type='checkbox' id='ckb_tk'>
-                        <div id='tk'>
-                            <a href='#'>Cài đặt tài khoản</a><br>   
-                            <a href='../DangXuat'>Đăng xuất</a>
-                        </div>
+                        
                     ";
                 }
                 ?>

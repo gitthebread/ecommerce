@@ -11,6 +11,7 @@
         }
         public function getAllByLimit($owner, $from, $size)
         {
+            $data = [];
             $data = $this->model->getAllByLimit($owner, $from, $size);
             include_once "../../views/sell/bill-home-view.php";
         }
@@ -21,7 +22,7 @@
             $pagesize = 6;
             $from = ($page-1)*$pagesize;
             $total = ceil($this->model->getCount($owner)/$pagesize);
-
+            $data = [];
             $data = $this->model->getAllWithPagination($owner, $from, $pagesize);
             include_once "../../views/sell/bill-view.php";
         }

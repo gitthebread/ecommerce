@@ -116,7 +116,7 @@ $limit = 4;
                     <?php
                         include_once "../../controllers/productController.php";
                         $controller = new ProductController();
-                        $controller->getAllProductByLimit_Sell($_SESSION['username'], 4 , 0);
+                        $controller->getAllProductByLimit_Sell($_SESSION['username'], 0 , 4);
                     ?>
                 </div>
             </div>

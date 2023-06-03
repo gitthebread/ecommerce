@@ -1,4 +1,6 @@
 <?php
+    if($data != null)
+    {
     echo
     "
         <table style='font-size: 20px; margin-top: 10px;'>
@@ -24,4 +26,9 @@
         ";
     }
     echo "</table>";
+    }   
+    else
+    {
+        echo "<p style = 'font-size: 25px'>Chưa có đơn hàng nào</p>";
+    }
 ?>

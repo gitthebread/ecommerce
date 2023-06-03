@@ -223,9 +223,9 @@
 
             include_once "../../views/product/filterProduct.php";
         }
-        public function getAllProductByLimit_Sell($owner, $limit, $offset)
+        public function getAllProductByLimit_Sell($owner, $from, $pagesize)
         {
-            $data = $this->model->getAllProductByLimit_Sell($owner, $limit, $offset);
+            $data = $this->model->getAllProductWithPagination($owner, $from, $pagesize);
             include_once "../../views/sell/product-home-view.php";
         }
         public function getAllProductWithPagination_sell($owner)

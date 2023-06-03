@@ -1,4 +1,6 @@
 <?php
+    if(count($data) != 0)
+    {
     echo
     "
         <table style='font-size: 20px; margin-top: 10px;'>
@@ -49,4 +51,9 @@
         ";
     }
     echo "</table>";
+    }
+    else 
+    {
+        echo "<p style = 'font-size: 25px'>Chưa có sản phẩm nào</p>";
+    }
 ?>
