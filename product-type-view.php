@@ -28,10 +28,7 @@
                         </p>
                         <a href='./views/detailProduct/index.php?id=".$product->getId()."' class='btn btn-primary' style='background-color: transparent; border: none;'>
                             <div class='product-cart'>
-                                <span class='material-symbols-outlined product-cart-icon'>
-                                    local_mall
-                                </span>
-                                <p class='product-cart-buy'>Mua ngay</p>
+                                <p class='product-cart-buy'>ADD</p>
                             </div>
                         </a>
                     </div>

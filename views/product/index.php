@@ -102,7 +102,7 @@
         <!--Filter + Products-->
     <div class="row">
         <!--Filter-->    
-        <div class="col-lg-3">
+        <!-- <div class="col-lg-3">
             <div class="d-lg-none filter-heading" id="filter-control">
                 Bộ lọc sản phẩm
                 <i class="fas fa-angle-down" id="filter-arrow" style="margin-left: 0.5rem;"></i>
@@ -125,7 +125,7 @@
                         ?>
                     </div>
                     
-                    <!-- <div class="price filter-content">
+                    <div class="price filter-content">
 
                         <div class="price-title">Khoảng giá</div>
                         <p style="font-size: 12px; margin-top:1rem;">Dùng slider hoặc nhập giá trị vào</p>
@@ -145,14 +145,14 @@
                             <input type="range" class="range-min" min="0" max="10000000" value="0" step="500000">
                             <input type="range" class="range-max" min="0" max="10000000" value="10000000" step="500000">
                         </div>
-                    </div> -->
+                    </div>
                     <button type="submit" class="btn btn-black btnFilter" id="filterbutton">Filter</button>
                 </form>
             </div>
-        </div>
+        </div> -->
 
         <!--NƠI HIỆN SẢN PHẨM + PHÂN TRANG-->
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-lg-12">
             <div class='products' id='product-body'>          
                 <?php
                     require_once "../../controllers/productController.php";

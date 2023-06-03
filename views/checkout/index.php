@@ -38,53 +38,7 @@
             <div class="checkout-body">
                 <div class="row">
                     <form action="#" method="POST" style="display: flex;" onsubmit="javascript: return getTotal();" class="checkout-body-form row">
-                        <div class="col-lg-6 col-md-12 col-12 checkout-body-left">           
-                            <div class="checkout-info">
-                                <div class="checkout-info-title">
-                                    Thông tin giao hàng
-                                </div>
-                                <div class="checkout-info-input">
-                                    <input name="checkout-info-name" type="text" class="checkout-info-input-item" placeholder="* Họ và tên">
-                                    <input name="checkout-info-email" type="text" class="checkout-info-input-item" placeholder="* Email">
-                                    <input name="checkout-info-number" type="text" class="checkout-info-input-item" placeholder="* Số điện thoại">
-                                    <input name="checkout-info-address" type="text" class="checkout-info-input-item" placeholder="* Địa chỉ">
-                                    <div class="checkout-info-input-txt">
-                                        * là trường không được để trống
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkout-payment">
-                                <div class="checkout-payment-title">
-                                    Phương thức thanh toán
-                                </div>
-                                <div class="checkout-payment-input">
-                                    <div class="checkout-payment-input-item">
-                                        <input type="radio" name="checkout-method" value="cod" checked>
-                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
-                                            local_shipping
-                                        </span>
-                                        <div class="checkout-payment-input-item-txt">Thanh toán ngay khi nhận hàng (COD)</div>
-                                    </div>
-                                    <div class="checkout-payment-input-item">
-                                        <input type="radio" name="checkout-method" value="credit-card"> 
-                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
-                                            credit_card
-                                        </span>
-                                        <div class="checkout-payment-input-item-txt">Thanh toán bằng thẻ tín dụng (MoMo)</div>
-                                    </div>
-                                    <div class="checkout-payment-input-item">
-                                        <input type="radio" name="checkout-method" value="qr-code">
-                                        <!-- <input id="hidden-redirect" type="hidden" name="redirect" value=""> -->
-                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
-                                            qr_code_scanner
-                                        </span>
-                                        <div class="checkout-payment-input-item-txt">Thanh toán bằng mã QR (MoMo)</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-6 col-md-12 col-12 checkout-body-right">
+                    <div class="col-lg-6 col-md-12 col-12 checkout-body-right">
                             <div class="cart-products checkout-products">
                                 <?php 
                                     include "../../components/cartProducts.php";
@@ -176,7 +130,52 @@
                                     }
                                 ?>
                             </div>
-                        </div>   
+                        </div>      
+                    <div class="col-lg-6 col-md-12 col-12 checkout-body-left">           
+                            <div class="checkout-info">
+                                <div class="checkout-info-title">
+                                    Thông tin giao hàng
+                                </div>
+                                <div class="checkout-info-input">
+                                    <input name="checkout-info-name" type="text" class="checkout-info-input-item" placeholder="* Họ và tên">
+                                    <input name="checkout-info-email" type="text" class="checkout-info-input-item" placeholder="* Email">
+                                    <input name="checkout-info-number" type="text" class="checkout-info-input-item" placeholder="* Số điện thoại">
+                                    <input name="checkout-info-address" type="text" class="checkout-info-input-item" placeholder="* Địa chỉ">
+                                    <div class="checkout-info-input-txt">
+                                        * là trường không được để trống
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-payment">
+                                <div class="checkout-payment-title">
+                                    Phương thức thanh toán
+                                </div>
+                                <div class="checkout-payment-input">
+                                    <div class="checkout-payment-input-item">
+                                        <input type="radio" name="checkout-method" value="cod" checked>
+                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
+                                            local_shipping
+                                        </span>
+                                        <div class="checkout-payment-input-item-txt">Thanh toán ngay khi nhận hàng (COD)</div>
+                                    </div>
+                                    <div class="checkout-payment-input-item">
+                                        <input type="radio" name="checkout-method" value="credit-card"> 
+                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
+                                            credit_card
+                                        </span>
+                                        <div class="checkout-payment-input-item-txt">Thanh toán bằng thẻ tín dụng (MoMo)</div>
+                                    </div>
+                                    <div class="checkout-payment-input-item">
+                                        <input type="radio" name="checkout-method" value="qr-code">
+                                        <!-- <input id="hidden-redirect" type="hidden" name="redirect" value=""> -->
+                                        <span class="material-symbols-outlined checkout-payment-input-item-icon">
+                                            qr_code_scanner
+                                        </span>
+                                        <div class="checkout-payment-input-item-txt">Thanh toán bằng mã QR (MoMo)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <?php 

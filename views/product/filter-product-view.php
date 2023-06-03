@@ -34,7 +34,7 @@
                                 </p>
                                 <a href='../detailProduct/index.php?id=".$product->getId()."' class='btn btn-primary' style='background-color: transparent; border: none;'>
                                     <div class='product-cart'>
-                                        <p class='product-cart-buy'>QUICK ADD</p>
+                                        <p class='product-cart-buy'>ADD</p>
                                     </div>
                                 </a>
                             </div>

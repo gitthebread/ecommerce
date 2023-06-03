@@ -39,7 +39,7 @@
                 <div class="cart-body">
                     <form action="../../controllers/cartAction.php" method="POST">
                         <div class="row">
-                            <div class="col-lg-7 col-md-12 col-12 cart-products">
+                            <div class="col-lg-12 col-md-12 col-12 cart-products">
                                 <?php
                                     if(!isset($_SESSION['cart'])) {
                                         $_SESSION['cart'] = array();
@@ -64,7 +64,7 @@
                                         else {
                                             echo '<p class="cart-info-content-price-money">0đ</p>';
                                         }
-                                        ?>
+                                    ?>
                                     <?php
                                 echo'</div>
                                 </div>
@@ -85,12 +85,12 @@
                                             Về trang chủ
                                         </div>
                                     </a>
-                            </div>';
+                                </div>';
                                 } 
                             else {
                                 echo'
                                 <div class="col-12 mb-4 overflow-hidden">
-                                    <img src="../../src/img/nocart.png" class="cart-img w-100 p-3" alt="">
+                                    <img src="../../src/img/nocart.png" class="cart-img w-100 p-3" alt="" style="max-height: 20rem; max-width: 20rem;">
                                     <h3 class="text-center" >Giỏ hàng rỗng</h3>
                                 </div>';
                                 }

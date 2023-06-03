@@ -40,16 +40,16 @@
                                 </div>
                                 <div class="col-9">
                                     <a href="../../views/detailProduct/index.php?page=detailproduct&id=<?= $prod_id ?>" class="text-decoration-none">
-                                        <div class="cart-item-name">
+                                        <div class="cart-item-name" style="padding-top: 6rem;">
                                             <?= $prod_name ?>
                                         </div>
                                     </a>
                                     <div class="cart-item-color-size">
-                                        <div class="color">
+                                        <!-- <div class="color">
                                             Màu sắc: <?= $prod_color ?>
-                                        </div>
-                                        <div class="size">
-                                            Size: <?= $prod_size ?>
+                                        </div> -->
+                                        <div class="size" style="padding-top: 2rem;">
+                                            Type: <?= $prod_size ?>
                                         </div>
                                     </div>
                                     <div class="cart-item-quantity-price">

@@ -18,11 +18,11 @@
                                     </div>
                                 </a>
                                 <div class="cart-item-color-size">
-                                    <div class="color">
+                                    <!-- <div class="color">
                                         Màu sắc: <?= $prod_color ?>
-                                    </div>
+                                    </div> -->
                                     <div class="size">
-                                        Size: <?= $prod_size ?>
+                                        Type: <?= $prod_size ?>
                                     </div>
                                 </div>
                                 <div class="cart-item-quantity-price">
@@ -43,7 +43,7 @@
         else{
             echo'
                 <div class="col-12 mb-4">
-                    <img src="../../src/img/cart.png" class="cart-img w-100 p-3" alt="">
+                    <img src="../../src/img/nocart.png" class="cart-img w-100 p-3" alt="">
                     <h3 class="text-center" >Giỏ hàng rỗng</h3>
                 </div>';
         }

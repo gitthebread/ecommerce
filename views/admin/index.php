@@ -36,28 +36,28 @@
                     </div>
                     
                     <div class="menu-list">
-                        <div class="menu-item">
+                        <!-- <div class="menu-item">
                             <a href="?page=dashboard" class="menu-item-link">
                                 <span class="material-symbols-outlined">
                                     dashboard
                                 </span>
                                 <div class="content">Tổng quan</div>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="menu-item">
                             <a href="?page=category" class="menu-item-link">
                                 <span class="material-symbols-outlined">
-                                    inventory
+                                    category
                                 </span>
-                                <div class="content">Danh mục sản phẩm</div>
+                                <div class="content">Danh mục sách</div>
                             </a>
                         </div>
                         <div class="menu-item">
                             <a href="?page=manage-product" class="menu-item-link">
                                 <span class="material-symbols-outlined">
-                                    inventory_2
+                                    menu_book
                                 </span>
-                                <div class="content">Sản phẩm</div>
+                                <div class="content">Tất cả sách</div>
                             </a>
                         </div>
                         <!-- <div class="menu-item">
@@ -84,18 +84,18 @@
                                 <div class="content">Đơn hàng</div>
                             </a>
                         </div> -->
-                        <div class="menu-item">
+                        <!-- <div class="menu-item">
                             <a href="?page=statistic" class="menu-item-link">
                             <span class="material-symbols-outlined">
                                 signal_cellular_alt
                             </span>
                                 <div class="content">Thống kê</div>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="menu-item">
                             <a href="../../index.php?msg=login-out" class="menu-item-link">
                                 <span class="material-symbols-outlined">
-                                    door_open
+                                    meeting_room
                                 </span>
                                 <div class="content">Đăng xuất</div>
                             </a>

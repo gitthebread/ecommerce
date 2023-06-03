@@ -5,7 +5,7 @@
                 reorder
             </span>
             <div class="pages-header-search col-5">
-                <input type="text" placeholder="Bạn tìm gì..." class="pages-header-search-input">
+                <!-- <input type="text" placeholder="Bạn tìm gì..." class="pages-header-search-input"> -->
             </div>
             <?php 
                 include_once "../../controllers/userController.php";
