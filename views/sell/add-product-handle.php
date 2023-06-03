@@ -12,5 +12,4 @@
     include_once "../../controllers/productController.php";
     $controller = new productController();
     $controller->addProduct_sell($_SESSION['username'], $name, $price, $quantity, $img, $id_category, $id_type, $size, $desc);
-
 ?>
