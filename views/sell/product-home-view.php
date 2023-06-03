@@ -22,9 +22,9 @@
             <td style='text-align: center; width: 400px;'>".$Product->getName()."</td>
             <td style='text-align: center; width: 200px;'>".$Product->getQuantity()."</td>
             <td style='text-align: center; width: 200px;'>
-                <a href='./product-detail.php?id=".$Product->getId()."'>Xem chi tiết</a><br>
-                <a href='./update-product.php?id=".$Product->getId()."'>Sửa</a><br>
-                <a style='color:red'data-toggle='modal' data-target='#mymodal".$Product->getId()."'>Xóa</a>
+                <a style = 'color: black' href='./product-detail.php?id=".$Product->getId()."'><button>Xem chi tiết</button></a><br>
+                <a style = 'color: black' href='./update-product.php?id=".$Product->getId()."'><button>Sửa</button></a><br>
+                <a style='color:red'data-toggle='modal' data-target='#mymodal".$Product->getId()."'><button>Xóa</button></a>
             </td>
             </tr>
         ";

@@ -36,7 +36,7 @@
         </div>
         <br>
         <a href="./add-product.php">
-            <button class="btn btn-primary mt-5" style="font-size: 20px; border-radius: 15px">Thêm sản phẩm</button>
+            <button class="btn btn-primary mt-5" style="padding: 10px; background-color: green; font-size: 20px; border-radius: 15px">Thêm sản phẩm</button>
         </a>
         <div>
             <?php
@@ -54,15 +54,25 @@
     #title {
         border: 1px solid #393646;
         display: inline-block;
-        margin-left: 35%;
+        margin-left: 30%;
         margin-top: 20px;
         padding: 20px;
         border-radius: 30px;
         background-color: #FFA559;
     }
     th, td {
-        border: 1px solid black;
+        border-top: 2px solid black;
         padding: 8px;
         text-align: left;
+    }
+    td a
+    {
+        color: black;
+    }
+    td button
+    {
+        background-color: #FFD93D;
+        width: 150px;
+        margin: 10px;
     }
 </style>

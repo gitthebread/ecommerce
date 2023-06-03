@@ -88,20 +88,20 @@ $limit = 4;
     <div class="row dashboard-body">
         <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
             <div class="dashboard-item-content">
-                <p class="dashboard-item-content-value"><?php echo number_format($revenue)?> đồng</p>
+                <p style='color: #06FF00' class="dashboard-item-content-value"><?php echo number_format($revenue)?> đồng</p>
                 <p class="dashboard-item-content-title">Doanh thu</p>
                 
             </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
             <div class="dashboard-item-content">
-                <p class="dashboard-item-content-value"><?php echo $totalSoldProduct?></p>
+                <p style='color: #06FF00' class="dashboard-item-content-value"><?php echo $totalSoldProduct?></p>
                 <p class="dashboard-item-content-title">Sản phẩm</p>
             </div>
         </div>
         <div class="col-12 col-sm-6 col-lg-4 dashboard-body-item">
             <div class="dashboard-item-content">
-                <p class="dashboard-item-content-value"><?php echo $totalBill?></p>
+                <p style='color: #06FF00' class="dashboard-item-content-value"><?php echo $totalBill?></p>
                 <p class="dashboard-item-content-title">Đơn hàng</p>
             </div>
         </div>
@@ -155,6 +155,8 @@ $limit = 4;
         padding: 10px;
         border-radius: 20px;
         margin-left: 20px;
+        background-color: orange;
+        color: black;
     }
     table {
         border-collapse: collapse;
@@ -162,7 +164,7 @@ $limit = 4;
     }
 
     th, td {
-        border: 1px solid black;
+        border-top: 2px solid black;
         padding: 8px;
         text-align: left;
     }
@@ -171,5 +173,15 @@ $limit = 4;
         font-size: 30px;
         margin-top: 20px;
         margin-left: 20px;  
+    }
+    td a
+    {
+        color: black;
+    }
+    td button
+    {
+        background-color: #FFD93D;
+        width: 150px;
+        margin: 10px;
     }
 </style>
