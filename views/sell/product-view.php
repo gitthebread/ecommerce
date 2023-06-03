@@ -69,7 +69,7 @@
     }
     else
     {
-        echo "<p style = 'font-size: 25px'>Chưa có sản phẩm nào</p>";
+        echo "<p style = 'font-size: 25px; padding-left:2rem;'>Chưa có sản phẩm nào</p>";
     }
     ?>
 </body>

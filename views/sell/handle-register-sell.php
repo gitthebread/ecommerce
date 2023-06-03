@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include_once "../../Controllers/shopController.php";
+    include_once "../../controllers/shopController.php";
     $name = $_POST['name'];
     $phone = $_POST['phone'];
     $address = $_POST['address'];

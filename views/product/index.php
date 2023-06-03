@@ -155,7 +155,7 @@
         <div class="col-12 col-lg-12">
             <div class='products' id='product-body'>          
                 <?php
-                    require_once "../../controllers/productController.php";
+                    require "../../controllers/productController.php";
                     $controller = new ProductController();
                     $controller->Display();
                 ?>

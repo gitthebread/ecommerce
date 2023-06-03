@@ -29,6 +29,6 @@
     }   
     else
     {
-        echo "<p style = 'font-size: 25px'>Chưa có đơn hàng nào</p>";
+        echo "<p style = 'font-size: 25px; padding-left: 2rem;'>Chưa có đơn hàng nào</p>";
     }
 ?>
