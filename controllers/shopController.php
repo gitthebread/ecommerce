@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     $filepath = realpath(dirname(__FILE__));
     // include_once ($filepath. '/../models/shopModel.php');
     include_once "../../models/shopModel.php";

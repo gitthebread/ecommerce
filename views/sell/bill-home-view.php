@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     if($data != null)
     {
     echo

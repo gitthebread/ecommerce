@@ -1,6 +1,7 @@
 <!-- PHÂN TRANG NẾU CÓ TYPE -->
 
-<?php 
+<?php
+    ob_start();
     if($products != NULL) {
         $currentPage = isset($_GET['current-page'])?$_GET['current-page']:1;
         $limit = 4;

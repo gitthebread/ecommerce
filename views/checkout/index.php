@@ -35,7 +35,7 @@
                     header("Location: ../../views/cart/index.php");
                 }
             ?>
-            <div class="checkout-body">
+            <div class="checkout-body" style="margin-top: 3rem; !important">
                 <div class="row">
                     <form action="#" method="POST" style="display: flex;" onsubmit="javascript: return getTotal();" class="checkout-body-form row">
                     <div class="col-lg-6 col-md-12 col-12 checkout-body-right">

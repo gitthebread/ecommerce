@@ -1,8 +1,8 @@
 <?php
 	define("HOST", "localhost");
-	define("DB", "doanweb");
-	define("USER", "root");
-	define("PASSWORD", "");
+	define("DB", "id20861863_doanweb");
+	define("USER", "id20861863_sharebookgroup");
+	define("PASSWORD", "123209@Dihoc");
 
 	//Tích hợp momo
 

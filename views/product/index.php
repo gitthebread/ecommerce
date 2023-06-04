@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     if (!function_exists('currency_format')) {
         function currency_format($number, $suffix = 'đ') {
             if (!empty($number)) {

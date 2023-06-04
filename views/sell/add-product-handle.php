@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     session_start();
     $name = $_POST['name'];
     $price = $_POST['price'];

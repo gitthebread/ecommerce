@@ -1,5 +1,6 @@
 <div class="product-filter">
     <?php 
+        ob_start();
         include_once "../../controllers/productController.php";
         $controller = new ProductController();
         // $currentPage = isset($_GET['current-page'])?$_GET['current-page']:1;

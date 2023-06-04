@@ -1,4 +1,5 @@
 <?php
+    ob_start();
     $filepath = realpath(dirname(__FILE__));
     include_once ($filepath. '/../modules/cart_module.php');
 
@@ -13,7 +14,7 @@ if (isset($_POST['cartcontroller'])) {
         "prod_name" => $_POST['prod_name'], 
         "prod_image" => $_POST['prod_image'],
         "prod_size" => $_POST['size'], 
-        "prod_color" => $_POST['color'], 
+        //"prod_color" => $_POST['color'],
         "prod_price" => $_POST['prod_price'],
         "prod_quantity" => $_POST['prod_quantity'],
         "prod_quantity_max" => $_POST['prod_quantity_max'], 

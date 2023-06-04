@@ -1,6 +1,7 @@
 <!-- IN RA SẢN PHẨM (ĐƯỢC GỌI BỞI CONTROLLER) -->
 
 <?php 
+    ob_start();
     if($data == NULL) {
         echo "<h1 style='text-align:center;'>Không có sản phẩm nào được tìm thấy</h1>";
     }else {

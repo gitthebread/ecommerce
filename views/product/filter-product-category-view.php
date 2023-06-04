@@ -1,4 +1,5 @@
-<?php 
+<?php
+    ob_start();
     foreach($data as $category) {
         if($category->getStatus() == 1) {
             echo "
