@@ -470,7 +470,7 @@
             $link = null;
             taoKetNoi($link);
             chayTruyVanTraVeDL($link, 
-            "update `products` set `name`='".$name."',`price`=$price,`description`='".$desc."',`image01`='".$img."',`image02`='".$img."', `category_id`=".$id_category.", `type`=".$id_type.", `size`='".$size."' WHERE id = $id");
+            "update `products` set `name`='".$name."',`price`=$price,`quantity`=$quantity, `description`='".$desc."',`image01`='".$img."',`image02`='".$img."', `category_id`=".$id_category.", `type`=".$id_type.", `size`='".$size."' WHERE id = $id");
             header("Location: ../../views/sell/product.php");
             
         }
