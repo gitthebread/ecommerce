@@ -23,7 +23,7 @@
                 }
                 
                 ?>
-                <a href="logout-handle.php"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href='logout-handle.php'><i class="fa-solid fa-right-from-bracket"></i></a>
             </div>
 
 

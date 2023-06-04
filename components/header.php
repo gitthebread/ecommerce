@@ -115,9 +115,19 @@
                     $typeController->getTypeListProduct();
                 ?>
                 <li class="nav-item">
-                    <a href="../../views/sell/sell-view.php" class="nav-item-link">
-                        Kênh người bán
-                    </a>
+                    <?php
+                        if(isset($_SESSION['role']) && isset($_SESSION['firstName']) && isset($_SESSION['lastName'])) {
+                            echo "<a href='../../views/sell/sell-view.php' class='nav-item-link'>
+                                        Kênh người bán
+                                </a>";
+                        }
+                        else
+                        {
+                            echo "<a href='../../views/login/index.php' class='nav-item-link'>
+                                        Kênh người bán
+                                </a>";
+                        }
+                    ?>
                 </li>
             </ul>
             
